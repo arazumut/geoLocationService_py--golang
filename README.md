@@ -1,3 +1,4 @@
+<h1>Python ile yazılmış olan geolocation service</h1>
 Betik, IP adresine ait ülke, bölge, şehir, enlem ve boylam gibi konum bilgilerini sağlamak amacıyla ipstack API'sini kullanmaktadır.
 Amaç
 
@@ -26,4 +27,53 @@ Betiğin İşleyişi
 Sonuç
 
 Bu Python betiği, kullanıcıların bir IP adresine ait coğrafi konum bilgilerini hızlı ve kolay bir şekilde elde etmelerini sağlar. Betik, ipstack API'si aracılığıyla doğru ve güvenilir veriler sunar. Kullanıcıdan alınan IP adresine dayalı olarak ülke, bölge, şehir, enlem ve boylam bilgileri API yanıtı doğrultusunda kullanıcıya gösterilir. Hatalı durumlar için ise uygun hata mesajları iletilerek kullanıcı bilgilendirilir.
-ChatGPT hata yapabilir. Önemli bilgileri kontrol edin.
+
+
+<h1>Golang ile yazılmış olan geolocation service</h1>
+
+Program, ipstack API'sini kullanarak bir IP adresine ait ülke, bölge, şehir, enlem ve boylam bilgilerini elde etmektedir.
+Genel Bakış
+
+Program, kullanıcıdan bir IP adresi girmesini istemekte ve ardından ipstack API'sini kullanarak bu IP adresine ait konum bilgilerini getirmektedir. Alınan bilgiler kullanıcıya gösterilmektedir. Programın temel bileşenleri ve işleyişi aşağıda detaylı olarak açıklanmıştır.
+Programın Detayları
+
+    Gerekli Kütüphanelerin Dahil Edilmesi
+        encoding/json: JSON verilerini işlemek için kullanılır.
+        fmt: Girdi ve çıktılar için formatlı I/O işlemleri sağlar.
+        net/http: HTTP isteklerini yapmak için kullanılır.
+        os: İşletim sistemi ile etkileşim kurmak için kullanılır (örneğin, hata durumunda programdan çıkmak).
+
+    API Yanıtı İçin Struct Tanımlaması
+        IpstackResponse adlı struct, ipstack API'sinden dönen JSON verilerini karşılamak için tanımlanmıştır.
+
+    Konum Bilgisi Alma Fonksiyonu
+        getLocation fonksiyonu, verilen bir IP adresi ve API anahtarı ile ipstack API'sine istek gönderir ve dönen yanıtı IpstackResponse struct'ına dönüştürür.
+        Fonksiyon, HTTP isteği yapar, yanıtı JSON formatında okur ve IpstackResponse struct'ına unmarshale eder.
+        Eğer bir hata oluşursa, hata mesajını döndürür.
+
+    Ana Fonksiyon
+        main fonksiyonu, kullanıcıdan bir IP adresi girmesini ister ve ardından getLocation fonksiyonunu çağırarak bu IP adresine ait konum bilgilerini alır.
+        Alınan konum bilgileri kullanıcıya yazdırılır.
+        Eğer bir hata oluşursa, hata mesajını yazdırır ve programdan çıkar.
+
+Çalışma Şekli
+
+    Kullanıcı programı çalıştırır ve IP adresini girer.
+    Program, ipstack API'sine istek gönderir ve IP adresine ait coğrafi konum bilgilerini alır.
+    Alınan bilgiler (IP adresi, ülke, bölge, şehir, enlem ve boylam) ekrana yazdırılır.
+    Eğer API anahtarı geçersizse veya başka bir hata oluşursa, hata mesajı ekrana yazdırılır ve program sonlandırılır.
+
+Sonuç
+
+Bu program, kullanıcı tarafından girilen bir IP adresine ait coğrafi konum bilgilerini almayı ve bu bilgileri ekrana yazdırmayı amaçlamaktadır. Program, HTTP istekleri ve JSON işlemleri için Go'nun standart kütüphanelerini kullanmaktadır. IP geolocation hizmeti olarak ipstack API'si kullanılmıştır. Kullanıcıya basit ve anlaşılır bir arayüz sunar ve gerekli durumlarda hata mesajları ile bilgilendirir.
+
+
+
+
+
+
+
+
+
+
+
