@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-// ! PRUDUCED BY Kamil Umut Araz
+// ! Produced BY Kamil Umut Araz
 // Struct for the API response
 type IpstackResponse struct {
 	IP        string  `json:"ip"`
