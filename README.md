@@ -7,7 +7,7 @@ Kullanılan Teknolojiler
 
     Python: Betiğin yazıldığı programlama dili.
     requests: Python'un HTTP kütüphanesi, API çağrılarını gerçekleştirmek için kullanılır.
-    ipstack API: IP adresi tabanlı konum bilgisi sağlayan bir API hizmeti.
+    ipstack API: IP adresi tabanlı konum bilgisi sağlayan bir API hizmeti. 
 
 Betiğin İşleyişi
 
