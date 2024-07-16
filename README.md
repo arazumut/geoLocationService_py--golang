@@ -11,6 +11,7 @@ Kullanılan Teknolojiler
 
 Betiğin İşleyişi
 
+
     API Anahtarının Tanımlanması: ipstack API'sine erişim sağlamak için bir API anahtarı gereklidir. Kullanıcı, bu anahtarı betikte belirtilen yere eklemelidir.
 
     Kullanıcıdan IP Adresinin Alınması: Betik, kullanıcıdan konum bilgisi öğrenilmek istenen IP adresini girmesini ister.
