@@ -1,3 +1,7 @@
+  <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
+    </a> 
+    <br>
 <h1>Python ile yazılmış olan geolocation service</h1>
 Betik, IP adresine ait ülke, bölge, şehir, enlem ve boylam gibi konum bilgilerini sağlamak amacıyla ipstack API'sini kullanmaktadır.
 Amaç
@@ -28,8 +32,10 @@ Betiğin İşleyişi
 Sonuç
 
 Bu Python betiği, kullanıcıların bir IP adresine ait coğrafi konum bilgilerini hızlı ve kolay bir şekilde elde etmelerini sağlar. Betik, ipstack API'si aracılığıyla doğru ve güvenilir veriler sunar. Kullanıcıdan alınan IP adresine dayalı olarak ülke, bölge, şehir, enlem ve boylam bilgileri API yanıtı doğrultusunda kullanıcıya gösterilir. Hatalı durumlar için ise uygun hata mesajları iletilerek kullanıcı bilgilendirilir.
-
-
+<br>
+   <a href="https://golang.org/" target="_blank" rel="noreferrer"> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="golang" width="40" height="40"/> 
+    </a>
 <h1>Golang ile yazılmış olan geolocation service</h1>
 
 Program, ipstack API'sini kullanarak bir IP adresine ait ülke, bölge, şehir, enlem ve boylam bilgilerini elde etmektedir.
