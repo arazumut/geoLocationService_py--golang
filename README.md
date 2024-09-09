@@ -72,6 +72,7 @@ Programın Detayları
 
 Sonuç
 
+
 Bu program, kullanıcı tarafından girilen bir IP adresine ait coğrafi konum bilgilerini almayı ve bu bilgileri ekrana yazdırmayı amaçlamaktadır. Program, HTTP istekleri ve JSON işlemleri için Go'nun standart kütüphanelerini kullanmaktadır. IP geolocation hizmeti olarak ipstack API'si kullanılmıştır. Kullanıcıya basit ve anlaşılır bir arayüz sunar ve gerekli durumlarda hata mesajları ile bilgilendirir.
 
 
