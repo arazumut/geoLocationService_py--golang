@@ -48,7 +48,7 @@ func main() {
 	fmt.Print("Lütfen konumunu öğrenmek istediğiniz IP adresini girin: ")
 	fmt.Scan(&ipAddress)
 
-	apiKey := "YOUR_API_KEY" // Buraya kendi API anahtarınızı ekleyiniz
+	apiKey := "YOUR_API_KEY" 
 
 	location, err := getLocation(ipAddress, apiKey)
 	if err != nil {
