@@ -1,8 +1,8 @@
 import requests
 
 def get_location(ip_address):
-    # ipstack API anahtarınızı buraya ekleyin
-    api_key = 'APİ anahtarınızı girmelisiniz'
+    # ipstack API anahtarÃ½nÃ½zÃ½ buraya ekleyin
+    api_key = 'APÃ anahtarÃ½nÃ½zÃ½ girmelisiniz'
     url = f'http://api.ipstack.com/{ip_address}?access_key={api_key}'
 
     response = requests.get(url)
@@ -20,16 +20,15 @@ def get_location(ip_address):
     else:
         return {'Error': data.get('error', {}).get('info', 'An error occurred')}
 
-# Kullanıcıdan IP adresi alınır
-ip_address = input("Lütfen konumunu öğrenmek istediğiniz IP adresini girin: ")
+ip_address = input("LÃ¼tfen konumunu Ã¶Ã°renmek istediÃ°iniz IP adresini girin: ")
 location = get_location(ip_address)
 
 if 'Error' in location:
-    print(f"Bir hata oluştu: {location['Error']}")
+    print(f"Bir hata oluÃ¾tu: {location['Error']}")
 else:
     print(f"IP Adresi: {location['IP']}")
-    print(f"Ülke: {location['Country']}")
-    print(f"Bölge: {location['Region']}")
-    print(f"Şehir: {location['City']}")
+    print(f"Ãœlke: {location['Country']}")
+    print(f"BÃ¶lge: {location['Region']}")
+    print(f"Ãehir: {location['City']}")
     print(f"Enlem: {location['Latitude']}")
     print(f"Boylam: {location['Longitude']}")
