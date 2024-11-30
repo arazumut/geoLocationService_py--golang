@@ -1,7 +1,7 @@
 import requests
 
 def get_location(ip_address):
-    # ipstack API anahtarýnýzý buraya ekleyin
+    
     api_key = 'APÝ anahtarýnýzý girmelisiniz'
     url = f'http://api.ipstack.com/{ip_address}?access_key={api_key}'
 
