@@ -8,7 +8,7 @@ import (
 )
 
 // ! Produced BY Kamil Umut Araz
-// Struct for the API response
+
 type IpstackResponse struct {
 	IP        string  `json:"ip"`
 	Country   string  `json:"country_name"`
