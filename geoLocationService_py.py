@@ -17,6 +17,7 @@ def get_location(ip_address):
             'Latitude': data.get('latitude'),
             'Longitude': data.get('longitude')
         }
+        
     else:
         return {'Error': data.get('error', {}).get('info', 'An error occurred')}
 
