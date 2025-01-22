@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+
 // ! Produced BY Kamil Umut Araz
 
 type IpstackResponse struct {
