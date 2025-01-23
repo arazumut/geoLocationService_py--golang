@@ -9,6 +9,7 @@ Amaç
 Betik, kullanıcıdan bir IP adresi alarak, bu IP adresine ait coğrafi konum bilgilerini otomatik olarak elde etmek ve kullanıcıya sunmak amacıyla tasarlanmıştır. Bu işlem, çeşitli nedenlerle IP adresi tabanlı konum tespiti yapması gereken kullanıcılar için kullanışlı olabilir.
 Kullanılan Teknolojiler
 
+
     Python: Betiğin yazıldığı programlama dili.
     requests: Python'un HTTP kütüphanesi, API çağrılarını gerçekleştirmek için kullanılır.
     ipstack API: IP adresi tabanlı konum bilgisi sağlayan bir API hizmeti. 
